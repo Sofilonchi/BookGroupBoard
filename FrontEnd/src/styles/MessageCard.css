@@ -1,0 +1,27 @@
+div.MessageCard{
+    margin:10px;
+    background:aliceblue;
+    border-radius: 10px;
+}
+
+p.MessageUserName{
+    font-size:22px;
+    margin:15px;
+}
+
+p.MessageDate{
+    color:"grey";
+    font-size:13px;
+    margin-left:15px;
+    margin-top: 10px;
+}
+
+ul.MessageMessage{
+    list-style-type: none;
+    margin: 20px;
+    padding: 5px;
+    color: black;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+

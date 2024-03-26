@@ -1,0 +1,38 @@
+div.NewMessageCard{
+    border:solid;
+    border-width: 2px;
+    border-radius: 20px;
+    padding:35px;
+    margin-bottom: 30px;
+    background-color:aliceblue;
+}
+
+h1.NewMessageTitle{
+    font-size: 52px;
+    color: black;
+    padding-bottom: 20px;
+    font-weight: 150;
+}
+
+div.NewMessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    padding: 8px;
+    padding-bottom: 20px;
+}
+
+input{
+    font-size: 15px;
+}
+
+Button.NewMessageSubmit{
+    padding:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    background-color: gold;
+    position: flex;
+    left:9px;
+}

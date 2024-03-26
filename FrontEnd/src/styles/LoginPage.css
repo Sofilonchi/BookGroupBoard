@@ -1,0 +1,27 @@
+h1.LogIn{
+    color:rgb(141, 205, 227);
+    font-size:100px;
+    font-weight:400;
+    margin:20px; 
+    display:fixed;
+    justify-content:center;
+    align-items:center;
+}
+
+form.LogInForm{
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+ul.LogInBoxes{
+    list-style-type: none;
+    padding: 10px;
+    margin: 20px;
+    display:fixed;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(255, 98, 0);
+    align-items: center;
+    position:flex;
+}

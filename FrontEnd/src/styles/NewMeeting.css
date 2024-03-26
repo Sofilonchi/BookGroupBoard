@@ -1,0 +1,30 @@
+div.NewMeeting{
+    border:solid;
+    border-width: 2px;
+    border-radius: 20px;
+    padding:35px;
+    margin-bottom: 30px;
+    background-color:aliceblue;
+}
+
+h1.NewMeetingTitle{
+    font-size: 52px;
+    color: black;
+    padding-bottom: 20px;
+    font-weight: 150;
+}
+
+input{
+    font-size: 15px;
+}
+
+Button.NewMeetingSubmit{
+    margin-top: 10px;
+    padding:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    background-color: gold;
+    position: flex;
+    left:1px;
+}

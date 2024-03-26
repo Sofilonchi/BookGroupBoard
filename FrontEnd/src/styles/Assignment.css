@@ -1,0 +1,41 @@
+div.NewAssignmentCard{
+    border:solid;
+    border-width: 2px;
+    border-radius: 20px;
+    padding:35px;
+    margin-bottom: 30px;
+    background-color:aliceblue;
+}
+
+h1.NewAssignmentTitle{
+    font-size: 52px;
+    color: black;
+    padding-bottom: 20px;
+    font-weight: 150;
+}
+
+input{
+    font-size: 15px;
+}
+
+Button.AssignmentSubmit{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: black;
+    background-color: gold;
+    position: flex;
+    left:1px;
+}
+
+Button.DeleteUserButton{
+    margin-top: 10px;
+    padding:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid;
+    border-width: 1px;
+    color: black;
+    position: flex;
+    left: 100px;
+}

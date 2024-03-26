@@ -1,0 +1,58 @@
+h1.UserTitle{
+    font-size: 52px;
+    color: black;
+    padding-bottom: 20px;
+    font-weight: 150;
+}
+
+ul.UserDetails{
+    list-style-type: none;
+    padding: 10px;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+li.textBox{
+    padding:5px;
+    position:flex;
+}
+
+div.UserForm{
+    border:solid;
+    border-width: 2px;
+    border-radius: 20px;
+    padding:35px;
+    margin-top:30px;
+    margin-bottom: 25px;
+    background-color:aliceblue;
+}
+
+Button.UserSubmit{
+    margin-top: 10px;
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    background-color: gold;
+    position: flex;
+    left:29px;
+}
+
+Button.DeleteUserButton{
+    margin-top: 10px;
+    padding:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid;
+    border-width: 1px;
+    color: black;
+    position: flex;
+    right: 29px;
+}
+
+li.userSelect{
+    padding-top: 10px;
+    position:flex;
+    margin-top:8px;
+    margin-bottom: 5px;
+}

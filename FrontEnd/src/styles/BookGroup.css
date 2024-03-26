@@ -1,0 +1,47 @@
+body{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: fixed;
+    justify-content: center;
+}
+
+div.CurrentDetails{
+    display: fixed;
+    justify-content: center;
+    font-weight: 300px;
+}
+
+div.messages{
+    scroll-margin-bottom: 10px;
+    padding-bottom: 20px;
+    flex:right;
+}
+
+h1.BookGroupWelcome{
+    border:none;
+    color:rgb(141, 205, 227);
+    font-size: 60px;
+    font-weight: 400;
+}
+
+div.bookGroupButtons{
+    padding-bottom: 15px;
+}
+
+div.Members{
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    width: 270px;
+    margin-bottom: 35px;
+    padding-top:10px;
+    column-count: 2;
+    column-gap: 100px;
+    text-align: center;
+    position: relative;
+}
+
+div.BookGroup{
+    align-items: center;
+    display:flex;
+}
