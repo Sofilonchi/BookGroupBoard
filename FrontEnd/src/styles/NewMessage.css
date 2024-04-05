@@ -4,7 +4,7 @@ div.NewMessageCard{
     border-radius: 20px;
     padding:35px;
     margin-bottom: 30px;
-    background-color:aliceblue;
+    background-color: #f9eee1;
 }
 
 h1.NewMessageTitle{
@@ -29,10 +29,11 @@ input{
 
 Button.NewMessageSubmit{
     padding:10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
     color: black;
-    background-color: gold;
+    font-weight: 500;
+    background-color: #b77d5c;
     position: flex;
     left:9px;
 }

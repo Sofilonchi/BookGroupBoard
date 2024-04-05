@@ -62,7 +62,7 @@ const NewMeeting = (props) => {
             </div>
             <Button className="NewMeetingSubmit" type='submit' color='primary' variant="contained" size="medium" onClick={createMeeting}> Set Date </Button>
         
-        {successMessage!=="" && <p>{successMessage}</p>}
+        {successMessage!=="" && <p style={{color:"green"}}>{successMessage}</p>}
         </div>
         <Button color='primary' variant='outlined' size='medium' onClick={returnToBookGroup}>Return to Book Group Page</Button>
         </>

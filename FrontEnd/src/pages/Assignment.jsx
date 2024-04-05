@@ -53,8 +53,9 @@ const AssignBook = (props) => {
         <h1 className="NewAssignmentTitle"> Assign the Next Book </h1>
         <form onSubmit={createAssignment}>
             <div>
-            <InputLabel id="book">Book</InputLabel>
+            <InputLabel id="book">Select Here</InputLabel>
                         <Select
+                        style={{width: "70%", backgroundColor: "white"}}
                         book-id="book"
                         id="book"
                         value={bookId}
@@ -77,7 +78,7 @@ const AssignBook = (props) => {
             <Button className="AssignmentSubmit" type='submit' color='primary' variant='contained' size='medium'  > Assign </Button>
         </form>
         </div>
-        {successMessage!="" && <p>{ successMessage }</p>}
+        {successMessage!="" && <p style={{color:"green"}}>{ successMessage }</p>}
         <Button color='primary' variant='outlined' size='medium' onClick={returnToBookGroup}> Return to Book Group Page </Button>
         </>
     )

@@ -4,28 +4,24 @@ div.NewAssignmentCard{
     border-radius: 20px;
     padding:35px;
     margin-bottom: 30px;
-    background-color:aliceblue;
+    background-color: #f9eee1;
+    /* background-color: rgb(220, 229, 210); */
 }
 
 h1.NewAssignmentTitle{
     font-size: 52px;
     color: black;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     font-weight: 150;
-}
-
-input{
-    font-size: 15px;
+    position: relative;
 }
 
 Button.AssignmentSubmit{
-    margin-top: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
+    margin-top: 25px;
     color: black;
-    background-color: gold;
+    background-color: #b77d5c;
     position: flex;
-    left:1px;
+    width:25%;
 }
 
 Button.DeleteUserButton{

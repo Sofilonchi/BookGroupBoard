@@ -15,6 +15,11 @@ ul.UserDetails{
 li.textBox{
     padding:5px;
     position:flex;
+    margin-bottom:3px;
+    input{
+        padding:5px;
+        width: 90%;
+    }
 }
 
 div.UserForm{
@@ -24,35 +29,26 @@ div.UserForm{
     padding:35px;
     margin-top:30px;
     margin-bottom: 25px;
-    background-color:aliceblue;
+    background-color: rgb(220, 229, 210);
 }
 
 Button.UserSubmit{
-    margin-top: 10px;
-    padding:10px;
-    padding-left: 20px;
-    padding-right: 20px;
     color: black;
-    background-color: gold;
-    position: flex;
+    background-color: #b77d5c;
     left:29px;
+    width:30%;
+    padding:10px;
 }
 
 Button.DeleteUserButton{
-    margin-top: 10px;
-    padding:10px;
-    padding-left: 10px;
-    padding-right: 10px;
     border: solid;
     border-width: 1px;
     color: black;
-    position: flex;
-    right: 29px;
+    width:50%;
+    margin-bottom: 10px;
 }
 
 li.userSelect{
     padding-top: 10px;
-    position:flex;
-    margin-top:8px;
-    margin-bottom: 5px;
+    position: flex;
 }

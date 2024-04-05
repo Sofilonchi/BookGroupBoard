@@ -27,19 +27,21 @@ const RegisterUser = (props) =>{
         event.preventDefault()
         let newErrorMsg = ""
         
-        axios.get("http//localHost:8088/api/genres/" + genreId)
+        axios.get("http://localHost:8088/api/genres/" + genreId)
         .then(response=>{
             const genreName = response.data.name
-            axios.get("http//localHost:8088/api/locations/" + locationId)
+            
+            axios.get("http://localHost:8088/api/locations/" + locationId)
             .then(response=>{
                 const locationName = response.data.name
                 const endpoint = "http://localhost:8088/api/users"
+                
                 if (userId==undefined){
         
                     axios.get("http://localhost:8088/api/users/checkusername/" + username)
                     .then(response=>{
                         if (response.error !== undefined){
-                            console.log(response.error)
+                            console.log("The error is with check username" + response.error)
                             return setErrorMsg("This username is taken, please choose another")
                         }
                         else{
@@ -61,6 +63,7 @@ const RegisterUser = (props) =>{
                                     genre:{id:genreId, name:genreName},
                                     bookGroup:thisGroup
                                 }
+                                console.log(user)
                                     axios.post(endpoint, user)
                                     .then(response=>{
                                         setSuccessMessage("Reader successfully created, please log in to see your book group")
@@ -70,6 +73,11 @@ const RegisterUser = (props) =>{
                     })
                 }   
                 else{
+                    const requestOptions = {
+                        headers:{
+                            Authorization: bearer
+                        }
+                    }
                     axios.get("http://localhost:8088/api/bookgroups/" + bookGroupId)
                     .then(response=>{ 
                         const group = response.data
@@ -83,12 +91,8 @@ const RegisterUser = (props) =>{
                         }
                         axios.put(endpoint, {...user, id:userId})
                         .then(response=>{
-            
-                            axios.get("http://localhost:8088/api/users/user" + userId)
-                            .then(response=> {
-                                setSuccessMessage("Reader Updated")
-                            })
-                            
+                            setSuccessMessage("Reader Updated")
+                            console.log(user)
                         })
                     .catch(err=>setErrorMsg("Something went wrong while updating your details"))
                 }
@@ -101,15 +105,11 @@ const RegisterUser = (props) =>{
 }
 
     const returnToBookGroup = () => {
-
         navigate("/BookGroup/" + userId + "/" + bookGroupId)
-
     }
 
     const LogIn = () => {
-
         navigate('/login')
-
     }
 
     const deleteUser = async () => {
@@ -150,12 +150,13 @@ const RegisterUser = (props) =>{
                         <label htmlFor="password">Password </label>
                         <input required id="password" value={password} onChange={(event) => setPassword(event.target.value)}/>
                     </li>
-                    <li className="userSelect">
+                    <li className="userSelect" style={{marginTop:"2px"}}> 
                         <InputLabel id="location-label"></InputLabel>
                         <FormHelperText> Location </FormHelperText>
                         <Select
                         labelId="location-label"
                         id="location"
+                        style={{backgroundColor:"white", width:"50%"}}
                         value={locationId}
                         onChange={event => setLocationId(event.target.value)}
                         >
@@ -166,12 +167,13 @@ const RegisterUser = (props) =>{
                             <MenuItem value={"5"}>Inner City</MenuItem>
                         </Select>
                         </li>
-                        <li className="userSelect">
+                        <li className="userSelect" style={{marginTop:"2px", paddingTop:"2px"}}>
                         <InputLabel id="genre-label"></InputLabel>
                         <FormHelperText> Genre </FormHelperText>
                         <Select
                         labelId="genre-label"
                         id="genre"
+                        style={{backgroundColor:"white", width:"50%"}}
                         value={genreId}
                         onChange={event => setGenreId(event.target.value)}
                         >
@@ -198,7 +200,6 @@ const RegisterUser = (props) =>{
             {userId!==undefined && <Button color='primary' variant='outlined' size='medium' onClick={returnToBookGroup}> Return to Book Group Page </Button>}
         </>
     )
-
 }
 
 export default RegisterUser

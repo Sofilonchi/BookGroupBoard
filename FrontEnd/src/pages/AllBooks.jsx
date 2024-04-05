@@ -52,15 +52,15 @@ const currentPosts = paginatedPosts[currentPage - 1]
                 theBook =>
                     <BookCard key={theBook.id} title={theBook.title} firstName={theBook.author.fname} lastName={theBook.author.lname}/> 
             )}
-                        </div>
-            <div className="BookListPagination">
+        </div>
+        <div className="BookListPagination">
             <Pagination
                 count = {paginatedPosts.length}
                 page = {currentPage}
                 onChange={(_, newPage) => setCurrentPage(newPage)}
                 />
         </div>
-        <Button variant="outlined" style={{marginLeft:"20px"}} onClick={()=>navigate("/BookGroup/" + userId + "/" + bookGroupId)}> Return to Book Group </Button>
+        {userId !==undefined && <Button variant="outlined" style={{marginLeft:"20px"}} onClick={()=>navigate("/BookGroup/" + userId + "/" + bookGroupId)}> Return to Book Group </Button>}
     </>
     )
 }

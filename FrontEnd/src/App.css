@@ -1,6 +1,6 @@
 div.NavigationBar{
     display:flex;
-    background-color:rgb(255, 214, 236);
+    background-color:rgb(182, 202, 147);
     position:fixed;
     top:0;
     left:0;
@@ -10,6 +10,10 @@ div.NavigationBar{
     justify-content: space-between ;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+body{
+    background-image: linear-gradient(rgb(220, 229, 210), white);
 }
 
 h2.WebsiteTitle{

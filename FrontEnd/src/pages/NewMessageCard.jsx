@@ -24,7 +24,7 @@ const NewMessageCard = (props) => {
             }
         }
     
-        axios.get("http://localhost:8088/api/users/user" + userId, requestOptions)
+        axios.get("http://localhost:8088/api/users/user/" + userId, requestOptions)
         .then(response=>{
             const person = response.data
             console.log(person)
@@ -65,7 +65,7 @@ const NewMessageCard = (props) => {
             </div>
             <Button className="NewMessageSubmit" type='submit' color='primary' variant='contained' size='medium'  >Post</Button>
         </form>
-        {successMessage!=="" && <p>{successMessage}</p>}
+        {successMessage!=="" && <p style={{color:"green"}} >{successMessage}</p>}
         </div>
         <Button color='primary' variant='outlined' size='medium' onClick={returnToBookGroup}>Return to Book Group Page</Button>
         </>

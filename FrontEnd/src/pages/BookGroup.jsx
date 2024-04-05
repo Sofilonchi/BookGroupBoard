@@ -78,12 +78,12 @@ const BookGroup = (props) => {
             </div>
             <div className="bookGroupButtons">
             <ButtonGroup >
-            <Button size="small" variant="outlined" colour="primary" onClick={()=>navigate("/NewMessageCard/" + userId + "/" + bookGroupId)} > New Message </Button>
-            <Button size="small" variant="outlined" colour="primary" onClick={()=>navigate("/Assignment/" + userId + "/" + bookGroupId)} > Assign New Book </Button>
+            <Button style={{color:"brown", borderColor:"brown", paddingLeft:"10px", paddingRight:"10px"}} size="small" variant="outlined" onClick={()=>navigate("/NewMessageCard/" + userId + "/" + bookGroupId)} > New Message </Button>
+            <Button  style={{color:"brown", borderColor:"brown", paddingLeft:"10px", paddingRight:"10px"}} size="small" variant="outlined" onClick={()=>navigate("/Assignment/" + userId + "/" + bookGroupId)} > Assign New Book </Button>
             {meeting==="" ?
-                <Button size="small" variant="outlined" colour="primary" onClick={()=>navigate("/NewMeeting/"+ userId + "/" + bookGroupId)} > Create New Meeting </Button>
+                <Button style={{color:"brown", borderColor:"brown", paddingLeft:"10px", paddingRight:"10px"}} size="small" variant="outlined" onClick={()=>navigate("/NewMeeting/"+ userId + "/" + bookGroupId)} > Create New Meeting </Button>
             :
-            <Button size="small" variant="outlined" colour="primary" disabled > Create New Meeting </Button>
+            <Button size="small" variant="outlined" disabled > Create New Meeting </Button>
             }
             <Button onClick={()=>navigate("/Books/" + userId + "/" + bookGroupId)} size="small" variant="outlined" color="secondary" > See All Books </Button> 
             <Button onClick={updateDetails} size="small" variant="outlined" color="secondary"> Update Reader Details </Button>

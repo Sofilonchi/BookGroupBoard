@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Routes, Route, Link, useNavigate } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
 import RegisterUser from './pages/RegisterUser'
@@ -14,10 +14,9 @@ import './App.css'
 import { Button } from '@mui/material'
 
 function App() {
+  
   const [bearer, setBearer] = useState(0)
   const navigate = useNavigate()
-  const [userId, setUserId] = useState(null)
-  const [bookGroupId, setBookGroupId] = useState(null)
 
   return (
     <>
@@ -25,11 +24,11 @@ function App() {
       <Button className="NavbarButton" onClick={()=>navigate("/")}> Book Group Board</Button>
           {bearer===0 ?
             <>
-            <Button className="NavbarButton" onClick={()=>navigate("/Books")}> See All Books </Button>
+            <Button className="NavbarButton" id="see-all-books-button" onClick={()=>navigate("/Books")}> See All Books </Button>
             </>
             :
             <> 
-            <Button className="NavbarButton" onClick={()=>navigate("/logout")}> Log Out </Button>
+            <Button className="NavbarButton" id="log-out-button" onClick={()=>navigate("/logout")}> Log Out </Button>
             </>
             }
       </div>

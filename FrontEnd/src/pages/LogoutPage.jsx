@@ -17,8 +17,8 @@ const LogOut = (props) => {
     
     return(
         <>
-        <h2> See you next time </h2>
-        <Button variant="outlined" size="large" onClick={logout}> Confirm Log Out </Button>
+        <h2 style={{color:"rgb(67, 90, 18)", fontSize:"80px", fontWeight:450}}> See you next time </h2>
+        <Button style={{borderColor:"brown", color:"brown", fontSize:"20px", fontWeight:450}} variant="outlined" onClick={logout}> Confirm Log Out </Button>
         
         </>
     )

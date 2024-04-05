@@ -1,20 +1,22 @@
 div.BookCard{
     margin:5px;
     padding:10px;
-    background:aliceblue;
+    background:  rgb(201, 188, 169);
     border-radius: 8px;
     padding-bottom: 90px;
     padding-top:10px;
+    max-width:200px;
 }
 
 p.BookTitle{
     font-size:22px;
     margin:15px;
     align-content: center;
+    color: black;
 }
 
 p.BookAuthor{
-    color:"grey";
+    color:black;
     font-size:15px;
     font-style: italic;
     margin-left:15px;

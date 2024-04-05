@@ -1,11 +1,10 @@
 h1.LogIn{
-    color:rgb(141, 205, 227);
+    color:rgb(67, 90, 18);
     font-size:100px;
     font-weight:400;
     margin:20px; 
-    display:fixed;
-    justify-content:center;
-    align-items:center;
+    padding-left: 17%;
+    padding-right: 17%;
 }
 
 form.LogInForm{
@@ -18,10 +17,11 @@ ul.LogInBoxes{
     list-style-type: none;
     padding: 10px;
     margin: 20px;
-    display:fixed;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 300;
-    color: rgb(255, 98, 0);
-    align-items: center;
-    position:flex;
+    color: rgb(67, 90, 18);
+    input{
+        padding: 4px;
+        width: 90%;
+    }
 }
