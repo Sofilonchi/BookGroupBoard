@@ -1,19 +1,19 @@
 body{
     padding-top: 40px;
     padding-bottom: 20px;
-    display: fixed;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 div.CurrentDetails{
     display: fixed;
     justify-content: center;
-    font-weight: 300px;
 }
 
 div.messages{
     margin-bottom: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 h1.BookGroupWelcome{
@@ -33,13 +33,22 @@ div.Members{
     background-color: rgba(126, 142, 32, 0.666);
     border-radius: 10px;
     padding: 20px;
-    padding-top: 20px;
-    column-count: 2;
-    column-gap: 10%;
-    text-align: center;
-    justify-content: center;
+    padding-left: 25px;
+    text-align: start;
     height:50%;
-    margin: 10px;
+    margin-top: 10px;
+    h3.Memberstitle{
+        column-count: 1;
+        font-weight: 300;
+        font-size: 20px;
+        color: white;
+    }
+    div.MembersNames{
+        /* column-count: 2;
+        column-gap: 30%; */
+        padding-bottom: 10px;
+        color: black;
+    }
 }
 
 div.BookGroup{

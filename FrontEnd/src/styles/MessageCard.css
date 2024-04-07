@@ -2,6 +2,7 @@ div.MessageCard{
     margin:10px;
     background:rgb(126, 142, 32);
     border-radius: 10px;
+    width: 700px;
 }
 
 p.MessageUserName{
